@@ -5,7 +5,7 @@ import shoppingData from '../shoppingData'
 
 
 export default function Cartcontainer() {
-    const item = shoppingData.map(item => <Item name={item.name} category={item.category} price={item.price.original} dicount={item.price.discount} />)
+    const item = shoppingData.map(item => <Item name={item.name} category={item.category} price={item.price.original} discount={item.price.discount} />)
     return (
         <div style={cartContainer}>
             <div style={shoppingListContainer}>

@@ -2,10 +2,7 @@ import React from 'react'
 
 
 export default function Item(props) {
-    function calcValue(a, b) {
-        console.log(Number(a) * (1 - Number(b)))
-    }
-    calcValue(props.price, props.discount)
+
     return (
         <div style={itemContainer}>
             <div style={itemName}>
@@ -14,10 +11,11 @@ export default function Item(props) {
             </div>
 
             <div style={itemPrice}>
-                <h4>{props.price * (1 - props.discount)}</h4>
-                <h6>{props.price}</h6>
+                {props.discount != 0 ? <h4>{Math.round((props.price * (1 - props.discount)) * 10) / 10}</h4> : null}
+                {props.discount === 0 ? <h6>{props.price}</h6> : <h6 style={{ color: "red" }} > {props.price}</h6>}
             </div>
-        </div>
+
+        </div >
     )
 }
 

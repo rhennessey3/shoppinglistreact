@@ -1,11 +1,16 @@
 import React from 'react'
+import shoppingData from '../shoppingData'
 
 
 
 export default function Footer() {
+
+    const totalValue = shoppingData.reduce((acc, obj) => {
+        return acc + obj.price.original
+    }, 0)
     return (
         <div style={appFooter}>
-            <h5>Rick Hennessey covid 2020</h5>
+            <h5>Total {Math.round(totalValue * 10) / 10}</h5>
         </div>
     )
 }

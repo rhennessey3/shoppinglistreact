@@ -14,7 +14,7 @@ const itemData = [
         category: 'fruits',
         price: {
             original: 3.87,
-            discount: .0
+            discount: 0
         },
     },
     {
@@ -32,7 +32,7 @@ const itemData = [
         category: 'pets',
         price: {
             original: 12.99,
-            discount: .0
+            discount: 0
         },
     },
     {
@@ -41,7 +41,7 @@ const itemData = [
         category: 'household',
         price: {
             original: 21.45,
-            discount: .0
+            discount: 0
         },
     },
     {
@@ -50,7 +50,7 @@ const itemData = [
         category: 'household',
         price: {
             original: 12.10,
-            discount: .0
+            discount: 0
         },
     },
     {
@@ -59,7 +59,7 @@ const itemData = [
         category: 'fruits',
         price: {
             original: 2.11,
-            discount: .0
+            discount: 0
         },
     },
     {
@@ -68,7 +68,7 @@ const itemData = [
         category: 'fruits',
         price: {
             original: 1.12,
-            discount: .0
+            discount: 0
         },
     },
     {
@@ -86,7 +86,7 @@ const itemData = [
         category: 'beverages',
         price: {
             original: 8.99,
-            discount: .0
+            discount: 0
         },
     },
     {
@@ -95,7 +95,7 @@ const itemData = [
         category: 'beverages',
         price: {
             original: 3.50,
-            discount: .0
+            discount: 0
         },
     },
 ];
